@@ -81,10 +81,19 @@ Display the last 10 lines of file	| tail file
 Display the last 10 lines of file and "follow" the file as it grows |	tail -f file
 
 ## File Permissions
-Usage | Command
-------|--------
-Legends in command outputs | U = User G = Group W = World"	Example command ls -ali
-Permissions in command outputs | r = Read w = write x = execute - = no access" Example command ls -ali
+Legends in command outputs , Example command ls -ali
+Legend | Meaning
+-------|--------
+U | User
+G | Group
+W | World	
+Permissions in command outputs, Example command ls -ali
+Legend | Meaning
+-------|--------
+r | Read 
+w | write 
+x | execute
+- | no access
 
 
 
