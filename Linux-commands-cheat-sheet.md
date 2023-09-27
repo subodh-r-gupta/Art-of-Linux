@@ -128,7 +128,7 @@ Download http://domain.com/file	| wget http://domain.com/file
 Display listening tcp and udp ports and corresponding programs	| netstat -nutlp
 
 
-## File Archives and Extraction Commands
+## File Archival and Extraction Commands
 Usage | Command
 ------|--------
 Create tar named archive.tar containing directory |	tar cf archive.tar directory
