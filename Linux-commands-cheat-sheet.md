@@ -80,4 +80,19 @@ Display the first 10 lines of file	| head file
 Display the last 10 lines of file	| tail file
 Display the last 10 lines of file and "follow" the file as it grows |	tail -f file
 
+## File Permissions
+Usage | Command
+------|--------
+FILE PERMISSIONS	"# Legends in command outputs |
+        U = User
+        G = Group
+        W = World"	ls -ali
+FILE PERMISSIONS	"# Permissions in command outputs |
+        r = Read
+        w = write
+        x = execute
+        - = no access"	ls -ali
+
+
+
 
