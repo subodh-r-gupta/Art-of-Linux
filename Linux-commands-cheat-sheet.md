@@ -83,8 +83,8 @@ Display the last 10 lines of file and "follow" the file as it grows |	tail -f f
 ## File Permissions
 Usage | Command
 ------|--------
-FILE PERMISSIONS	"# Legends in command outputs | U = UserG = Group W = World"	Example command ls -ali
-FILE PERMISSIONS	"# Permissions in command outputs | r = Read w = write x = execute- = no access" Example command ls -ali
+Legends in command outputs | U = User G = Group W = World"	Example command ls -ali
+Permissions in command outputs | r = Read w = write x = execute- = no access" Example command ls -ali
 
 
 
