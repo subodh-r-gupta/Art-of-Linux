@@ -1,4 +1,4 @@
-# Linux Commands : Cheat Sheet
+# Linux Commands : An administrator's Cheat Sheet
 ---
 
 ## System Information Commands
