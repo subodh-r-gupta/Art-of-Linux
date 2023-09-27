@@ -101,7 +101,7 @@ Usage | Command
 ------|--------
 Display your currently running processes	| ps
 Display all the currently running processes on the system |	ps -ef
-Display process information for processname	| ps -ef | grep processname
+Display process information for processname	| ps -ef \| grep processname
 Display and manage the top processes	| top
 Interactive process viewer (top alternative)	| htop
 Kill process with process ID of pid	kill | pid
