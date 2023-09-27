@@ -156,7 +156,15 @@ Search recursively for pattern in directory	| grep -r pattern directory
 Find files and directories by name	| locate name
 Find files in /home/john that start with "prefix"	| find \/home\/john -name 'prefix*'
 Find files larger than 100MB in \/home	| find \/home -size +100M
-	
-	
+
+## SSH Commands
+Usage | Command
+------| -------
+Connect to host as your local username | ssh host
+Connect to host as user	| ssh user@host
+Connect to host using port	| ssh -p port user@host
+
+
+
 
 
