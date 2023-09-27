@@ -111,6 +111,21 @@ Display stopped or background jobs	| bg
 Brings the most recent background job to foreground	| fg
 Brings job n to the foreground	| fg n
 
+## Networking Commands
+Usage | Command
+------|--------
+Display all network interfaces and IP address	| ip a
+Display eth0 address and details	| ip addr show dev eth0
+Query or control network driver and hardware settings	| ethtool eth0
+Send ICMP echo request to host	| ping host
+Display whois information for domain | whois domain
+Display DNS information for domain	| dig domain
+Reverse lookup of IP_ADDRESS	| dig -x IP_ADDRESS
+Display DNS IP address for domain	| host domain
+Display the network address of the host name |	hostname -i
+Display all local IP addresses of the host |	hostname -I
+Download http://domain.com/file	| wget http://domain.com/file
+Display listening tcp and udp ports and corresponding programs	| netstat -nutlp
 
 
 
