@@ -189,6 +189,15 @@ Display disks partitions sizes and types	| fdisk -l
 Display disk usage for all files and directories in human readable format	| du -ah
 Display total disk usage of the current directory	| du -sh
 
+## Kernel Module Management commands
+Usage | Command
+------|--------
+list names of all modules compiled into the kernel (whether being used or not) can be listed using |	cat /lib/modules/$(uname -r)/modules.builtin
+list names of all the kernel modules dynamically loaded into the kernel (not compiled in) can be listed using the following command | cat /proc/modules
+view information about a specific module type | 	modinfo modulename
+To install a kernel module and all modules that it depends upon use the following command | 	modprobe -r modulename
+To install a kernel module ignoring any module dependencies use the following command | 	insmod pathname
+To remove a kernel module use the following command |  	rmmod modulename
 
 
 
