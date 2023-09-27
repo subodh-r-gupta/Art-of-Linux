@@ -138,4 +138,20 @@ Extract a gzip compressed tar file | tar xzf archive.tar.gz
 Create a tar file with bzip2 compression	| tar cjf archive.tar.bz2 directory
 Extract a bzip2 compressed tar file |	tar xjf archive.tar.bz2
 
+Package Management Commands
+Usage | Command
+------|--------
+Search for a package by keyword | yum search keyword
+Install package | yum install package
+Display description and summary information about package |	yum info package
+Install package from local file named package.rpm	| rpm -i package.rpm
+Remove/uninstall package |	yum remove package
+Install software from source code | "tar zxvf sourcecode.tar.gz
+cd sourcecode
+./configure
+make
+make install
+"
+	
+
 
