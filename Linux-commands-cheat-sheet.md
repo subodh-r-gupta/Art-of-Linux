@@ -87,6 +87,7 @@ Legend | Meaning
 U | User
 G | Group
 W | World	
+
 Permissions in command outputs, Example command ls -ali
 Legend | Meaning
 -------|--------
