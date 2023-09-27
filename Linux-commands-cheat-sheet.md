@@ -183,5 +183,11 @@ Display disk usage for all files and directories in human readable format	| du -
 Display total disk usage of the current directory	| du -sh
 
 
+## Directory Navigation
+Usage | Command
+------|--------
+To go up one level of the directory tree (Change into the parent directory)	| cd ..
+Go to the $HOME directory	| cd
+Change to the /etc directory	| cd /etc
 
 
