@@ -173,6 +173,14 @@ Copy all files and directories recursively from server to the current system's 
 Synchronize /home to /backups/home	| rsync -a /home /backups/
 Synchronize files/directories between the local and remote system with compression enabled | rsync -avz \/home server:\/backups\/
 
+## Disk Usage Monitoring Commands
+Usage | Command
+------|--------
+Show free and used space on mounted filesystems	| df -h
+Show free and used inodes on mounted filesystems	| df -i
+Display disks partitions sizes and types	| fdisk -l
+Display disk usage for all files and directories in human readable format	| du -ah
+Display total disk usage of the current directory	| du -sh
 
 
 
