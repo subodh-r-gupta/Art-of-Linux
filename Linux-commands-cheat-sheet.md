@@ -46,4 +46,14 @@ List files opened by user	| lsof -u user
 Display free and used memory ( -h for human readable, -m for MB, -g for GB.)	| free -h
 Execute "df -h", showing periodic updates	| watch df -h
 
-
+## User information and User account management
+Usage | Command
+------|--------
+Display the user and group ids of current user |	id
+Display the last users who have logged onto the system | last
+Show who is logged into the system currently |	who
+Show who is logged in and what they are doing |	w
+Create a group named "test" | groupadd test
+Create an account named john, with a comment of "John Smith" and create the user's home directory | useradd -c "John Smith" -m john
+Delete the john account |	userdel john
+Add the john account to the sales group	| usermod -aG sales john
