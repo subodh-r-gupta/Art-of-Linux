@@ -17,7 +17,6 @@ show who is online	| w
 show Who you are logged in as	| whoami
 
 ## Hardware Information Commands
-
 Usage | Command
 ------|--------
 Display messages in kernel ring buffer	| dmesg
