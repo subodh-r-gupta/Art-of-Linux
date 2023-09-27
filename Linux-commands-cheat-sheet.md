@@ -79,6 +79,9 @@ Browse through a text file	| less file
 Display the first 10 lines of file	| head file
 Display the last 10 lines of file	| tail file
 Display the last 10 lines of file and "follow" the file as it grows |	tail -f file
+To go up one level of the directory tree (Change into the parent directory)	| cd ..
+Go to the $HOME directory	| cd
+Change to the /etc directory	| cd /etc
 
 ## File Permissions
 Legends in command outputs , Example command ls -ali
@@ -183,11 +186,6 @@ Display disk usage for all files and directories in human readable format	| du -
 Display total disk usage of the current directory	| du -sh
 
 
-## Directory Navigation
-Usage | Command
-------|--------
-To go up one level of the directory tree (Change into the parent directory)	| cd ..
-Go to the $HOME directory	| cd
-Change to the /etc directory	| cd /etc
+
 
 
