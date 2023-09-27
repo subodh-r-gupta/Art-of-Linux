@@ -94,7 +94,7 @@ Legend | Meaning
 r | Read 
 w | write 
 x | execute
-- | no access
+\- | no access
 
 
 
