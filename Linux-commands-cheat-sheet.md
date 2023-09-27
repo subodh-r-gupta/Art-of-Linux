@@ -30,7 +30,7 @@ Show info about disk sda	| hdparm -i /dev/sda
 Perform a read speed test on disk sda	| hdparm -tT /dev/sda
 Test for unreadable blocks on disk sda	| badblocks -s /dev/sda
 
-## Performance monitoring and statistics
+## Performance monitoring and statistics Commands
 Usage | Command
 ------|--------
 Display and manage the top processes	| top
@@ -46,7 +46,7 @@ List files opened by user	| lsof -u user
 Display free and used memory ( -h for human readable, -m for MB, -g for GB.)	| free -h
 Execute "df -h", showing periodic updates	| watch df -h
 
-## User information and User account management
+## User information and User account management Commands
 Usage | Command
 ------|--------
 Display the user and group ids of current user |	id
@@ -95,6 +95,21 @@ r | Read
 w | write 
 x | execute
 \- | no access
+
+## Process Management Commands
+Usage | Command
+------|--------
+Display your currently running processes	| ps
+Display all the currently running processes on the system |	ps -ef
+Display process information for processname	| ps -ef | grep processname
+Display and manage the top processes	| top
+Interactive process viewer (top alternative)	| htop
+Kill process with process ID of pid	kill | pid
+Kill all processes named processname	| killall processname
+Start program in the background	| program &
+Display stopped or background jobs	| bg
+Brings the most recent background job to foreground	| fg
+Brings job n to the foreground	| fg n
 
 
 
