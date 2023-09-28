@@ -30,7 +30,7 @@ docker show disk information	| docker system df
 docker show system events	| docker system events 
 docker show system info	| docker system info
 docker prune unused data	| docker system prune
-Snoop network settings of a running container	| docker inspect $container_id | $container_name
+Snoop network settings of a running container	| docker inspect container-name / docker inspect container-id
 Check docker image content, if entrypoint is provided	| docker run -it --entrypoint sh image-name
 
 
