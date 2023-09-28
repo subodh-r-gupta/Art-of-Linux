@@ -118,6 +118,18 @@ List secrets	| kubectl get secrets
 List details about secrets	| kubectl describe secrets
 Delete a secret	| kubectl delete secret <secret_name>
 
+## Services and Service Accounts
+ Usage | Command
+------|-------
+List one or more services	| kubectl get services 
+Display the detailed state of a service	| kubectl describe services
+Expose a replication controller, service, deployment or pod as a new Kubernetes service | kubectl expose deployment [deployment_name]
+Edit and update the definition of one or more services	| kubectl edit services 
+List service accounts	| kubectl get serviceaccounts 
+Display the detailed state of one or more service accounts	| kubectl describe serviceaccounts
+Replace a service account	| kubectl replace serviceaccount
+Delete a service account	| kubectl delete serviceaccount <service_account_name>
+
 
 
 
