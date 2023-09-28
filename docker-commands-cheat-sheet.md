@@ -1,7 +1,7 @@
 # Docker Commands Cheat Sheet
 ---
 
-## Run docker containers
+## Running docker containers
 
 Usage | Command
 ------|--------
@@ -15,3 +15,20 @@ Run shell with docker alpine image	| docker run -it --rm alpine sh
 Start  a container by name	| docker start container-name
 Stop a container by name	| docker stop container name 
 Run commands inside a running docker container e.g. shows `ls` in a running container | docker exec -it 4a140740c577 ls
+
+## Checking docker resources
+
+Usage | Command
+------|--------
+Check docker images	| docker images / docker images ls
+Check docker containers	| docker ps -a / docker container ls
+Check the process running inside the container	docker top container-name or container-id
+Check resource utilization	| docker stats
+Check docker logs with multiple time options	| docker logs -f --since <1s|5m|1d|UTC date time container-name
+Inspect container configurations	| docker inspect
+docker show disk information	| docker system df
+docker show system events	| docker system events 
+docker show system info	| docker system info
+docker prune unused data	| docker system prune
+Snoop network settings of a running container	| docker inspect $container_id | $container_name
+Check docker image content, if entrypoint is provided	| docker run -it --entrypoint sh image-name
