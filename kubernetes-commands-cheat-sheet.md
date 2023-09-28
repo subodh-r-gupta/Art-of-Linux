@@ -1,4 +1,4 @@
-![image](https://github.com/subodh-r-gupta/Art-of-Linux/assets/89509047/09089ba0-2165-4f22-8e31-6dd6f6d15703)# kubernetes Commands Cheat Sheet
+kubernetes Commands Cheat Sheet
 ---
 
 ## Cluster Management
