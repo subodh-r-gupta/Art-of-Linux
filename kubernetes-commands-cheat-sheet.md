@@ -43,7 +43,6 @@ Pull events for a single node with a specific name	| kubectl get events –field
 ## Listing resources
 Usage | Command
 ------|-------
-
 Generate a plain-text list of all namespaces | kubectl get namespaces
 Generate a plain-text list of all pods	| kubectl get pods
 Generate a detailed plain-text list of all pods	| kubectl get pods -o wide
