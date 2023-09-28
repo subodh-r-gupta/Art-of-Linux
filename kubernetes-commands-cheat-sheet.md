@@ -1,4 +1,4 @@
-# kubernetes Commands Cheat Sheet
+![image](https://github.com/subodh-r-gupta/Art-of-Linux/assets/89509047/09089ba0-2165-4f22-8e31-6dd6f6d15703)# kubernetes Commands Cheat Sheet
 ---
 
 ## Cluster Management
@@ -109,6 +109,14 @@ List the replication controllers by namespace	| kubectl get rc –namespace=”<
 Display the detailed state of one or more ReplicaSets	| kubectl get replicasets
 List ReplicaSets	| kubectl describe replicasets <replicaset_name> 
 Scale a ReplicaSet	| kubectl scale –replicas=[x]
+
+## Secrets
+ Usage | Command
+------|-------
+Create a secret	| kubectl create secret
+List secrets	| kubectl get secrets
+List details about secrets	| kubectl describe secrets
+Delete a secret	| kubectl delete secret <secret_name>
 
 
 
