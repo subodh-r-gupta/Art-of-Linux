@@ -22,7 +22,7 @@ Usage | Command
 ------|--------
 Check docker images	| docker images / docker images ls
 Check docker containers	| docker ps -a / docker container ls
-Check the process running inside the container	docker top container-name or container-id
+Check the process running inside the container	| docker top container-name or container-id
 Check resource utilization	| docker stats
 Check docker logs with multiple time options	| docker logs -f --since <1s|5m|1d|UTC date time container-name
 Inspect container configurations	| docker inspect
@@ -40,7 +40,7 @@ Usage | Command
 Update container configurations and restart	| docker update --restart=always container-name
 Update container configurations	| docker update --kernel-memory 80M container-name
 
-## // Cleanup stopped containers	
+## Cleanup stopped containers	
 Usage | Command
 ------|--------
 Cleanup stopped containers   | docker rm $(docker ps -q -f 'status=exited')
