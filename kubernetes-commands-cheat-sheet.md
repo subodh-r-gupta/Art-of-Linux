@@ -62,3 +62,13 @@ Print the logs for a container in a pod	| kubectl logs -c <container_name> <pod_
 Output the logs for a pod into a file named ‘pod.log’	| kubectl logs <pod_name> pod.log 
 View the logs for a previously failed pod	| kubectl logs –previous <pod_name> 
 
+## Namespaces
+ Usage | Command
+------|-------
+Create namespace | kubectl create namespace <namespace_name> 
+List one or more namespaces	| kubectl get namespace <namespace_name>
+Display the detailed state of one or more namespace	| kubectl describe namespace <namespace_name>
+Delete a namespace	| kubectl delete namespace <namespace_name>
+Edit and update the definition of a namespace	| kubectl edit namespace <namespace_name>
+Display Resource (CPU/Memory/Storage) usage for a namespace	| kubectl top namespace <namespace_name> 
+
