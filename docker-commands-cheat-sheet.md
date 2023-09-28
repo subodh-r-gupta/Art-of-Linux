@@ -40,7 +40,7 @@ Usage | Command
 Update container configurations and restart	| docker update --restart=always container-name
 Update container configurations	| docker update --kernel-memory 80M container-name
 
-## Cleanup docker containers	
+## Cleanup docker containers resources
 Usage | Command
 ------|--------
 Cleanup stopped containers   | docker rm $(docker ps -q -f 'status=exited')
