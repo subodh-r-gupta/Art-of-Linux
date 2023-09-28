@@ -101,3 +101,15 @@ Add or update the annotations of a pod	| kubectl annotate pod <pod_name> <annota
 Add or update the label of a pod	| kubectl label pod <pod_name>
 
 
+# Replication controllers and ReplicaSets
+ Usage | Command
+------|-------
+List the replication controllers	| kubectl get rc 
+List the replication controllers by namespace	| kubectl get rc –namespace=”<namespace_name>”
+Display the detailed state of one or more ReplicaSets	| kubectl get replicasets
+List ReplicaSets	| kubectl describe replicasets <replicaset_name> 
+Scale a ReplicaSet	| kubectl scale –replicas=[x]
+
+
+
+
