@@ -32,3 +32,12 @@ docker show system info	| docker system info
 docker prune unused data	| docker system prune
 Snoop network settings of a running container	| docker inspect $container_id | $container_name
 Check docker image content, if entrypoint is provided	| docker run -it --entrypoint sh image-name
+
+
+## updating docker container resources
+Usage | Command
+------|---------
+Update container configurations and restart	| docker update --restart=always container-name
+Update container configurations	| docker update --kernel-memory 80M container-name
+
+
