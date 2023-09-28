@@ -52,5 +52,11 @@ Cleanup docker images | docker image prune
 Cleanup unused networks | docker network prune
 Cleanup unused volumes | docker volume prune
 
+## docker volume and file mangemement
+Usage | Command
+------|--------
+Mount volume myvol2 into docker container at /app	| docker run -it -v myvol2:/app  image-name:image-version
+Copy file `foo.txt` to docker container `mycontainer`	| docker cp foo.txt mycontainer:/foo.txt
+Copy file `foo.txt` from docker container `mycontainer` to host machine	| docker cp mycontainer:/foo.txt foo.txt
 
 
