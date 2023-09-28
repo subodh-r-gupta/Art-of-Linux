@@ -34,13 +34,13 @@ Snoop network settings of a running container	| docker inspect $container_id | $
 Check docker image content, if entrypoint is provided	| docker run -it --entrypoint sh image-name
 
 
-## Updating docker container resources
+## Updating docker resources
 Usage | Command
 ------|---------
 Update container configurations and restart	| docker update --restart=always container-name
 Update container configurations	| docker update --kernel-memory 80M container-name
 
-## Cleanup docker containers resources
+## Cleanup docker resources
 Usage | Command
 ------|--------
 Cleanup stopped containers   | docker rm $(docker ps -q -f 'status=exited')
