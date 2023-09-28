@@ -34,10 +34,23 @@ Snoop network settings of a running container	| docker inspect $container_id | $
 Check docker image content, if entrypoint is provided	| docker run -it --entrypoint sh image-name
 
 
-## updating docker container resources
+## Updating docker container resources
 Usage | Command
 ------|---------
 Update container configurations and restart	| docker update --restart=always container-name
 Update container configurations	| docker update --kernel-memory 80M container-name
+
+## // Cleanup stopped containers	
+Usage | Command
+------|--------
+Cleanup stopped containers   | docker rm $(docker ps -q -f 'status=exited')
+Cleanup dangling images	| docker rmi $(docker images -q -f "dangling=true")
+Cleanup dangling volumes	| docker volume rm $(docker volume ls -qf dangling=true)
+Cleanup all unused docker artifacts	| docker system prune
+Cleanups docker containers | docker container prune
+Cleanup docker images | docker image prune
+Cleanup unused networks | docker network prune
+Cleanup unused volumes | docker volume prune
+
 
 
