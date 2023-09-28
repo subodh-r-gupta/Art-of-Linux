@@ -40,3 +40,26 @@ List events but exclude Pod events	| kubectl get events –field-selector involv
 Pull events for a single node with a specific name	| kubectl get events –field-selector involvedObject.kind=Node, involvedObject.name=<node_name>
  Filter out normal events from a list of events	| kubectl get events –field-selector type!=Normal
 
+## Listing resources
+Usage | Command
+------|-------
+
+Generate a plain-text list of all namespaces | kubectl get namespaces
+Generate a plain-text list of all pods	| kubectl get pods
+Generate a detailed plain-text list of all pods	| kubectl get pods -o wide
+Generate a list of all pods running on a particular node server	| kubectl get pods–field-selector=spec. nodeName=[server-name]
+List a specific replication controller in plain text	| kubectl get replicationcontroller [replication-controller-name]
+Generate a plain-text list of all replication controllers and services	| kubectl get replicationcontroller, services
+
+ ## Logs
+ Usage | Command
+------|-------
+Print the logs for a pod	| kubectl logs <pod_name>
+Print the logs for a pod for last 1 hour	| kubectl logs –since=1h <pod_name> 
+Get the most recent 20 lines of logs	| kubectl logs –tail=20 <pod_name>
+Get logs from a service and optionally select which container	| kubectl logs -f <service_name> [-c <$container>] 
+Print the logs for a pod and follow new logs	| kubectl logs -f <pod_name>
+Print the logs for a container in a pod	| kubectl logs -c <container_name> <pod_name>
+Output the logs for a pod into a file named ‘pod.log’	| kubectl logs <pod_name> pod.log 
+View the logs for a previously failed pod	| kubectl logs –previous <pod_name> 
+
