@@ -87,4 +87,17 @@ Mark node as schedulable	| kubectl uncordon node <node_name>
 Drain a node in preparation for maintenance	| kubectl drain node <node_name>
 Add or update the labels of one or more nodes	| kubectl label node
 
+## Pod operations
+ Usage | Command
+------|-------
+List one or more pods	| kubectl get pod
+Delete a pod	| kubectl delete pod <pod_name>
+Create a pod	| kubectl create pod <pod_name>
+Execute a command against a container in a pod	| kubectl exec <pod_name> -c <container_name> <command> 
+Get interactive shell on a a single-container pod	| kubectl exec -it <pod_name> /bin/sh
+Display Resource usage (CPU/Memory/Storage) for pods	| kubectl top pod
+Display the detailed state of a pods	| kubectl describe pod <pod_name>
+Add or update the annotations of a pod	| kubectl annotate pod <pod_name> <annotation> 
+Add or update the label of a pod	| kubectl label pod <pod_name>
+
 
