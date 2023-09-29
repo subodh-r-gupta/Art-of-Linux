@@ -1,6 +1,10 @@
 # git Commands Cheat Sheet
 ---
 
+# git client installation
+On Debian based systems -
+> apt install git
+
 ## Create and Clone Repository
 
 
