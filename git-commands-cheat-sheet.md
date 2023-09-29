@@ -18,4 +18,8 @@ Check git version
   > git init
 
 
+## checkout a repository
+
+to copy a local repo 
+> 
 
