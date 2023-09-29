@@ -8,6 +8,8 @@ On Debian based systems -
 ## Create a new repository
 - make a new folder
   > mkdir myproject
+  > cd myproject
+  
 - initialize git
   > git init
 
