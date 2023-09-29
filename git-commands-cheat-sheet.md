@@ -5,6 +5,9 @@
 On Debian based systems -
 > apt install git
 
+Check git version
+> git --version
+
 ## Create a new repository
 - make a new folder
   > mkdir myproject
